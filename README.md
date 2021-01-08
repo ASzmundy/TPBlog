@@ -1,10 +1,10 @@
 # TP1 (Blog)
-##Par Alexis Szmundy
+## Par Alexis Szmundy
 Modèle utilisé ( à la toute base ): https://startbootstrap.com/theme/clean-blog
 Outils utilisés : Symfony, Bootstrap, Composer, WAMP
 Nom de la BDD : tpweb
 
-##Instructions
+## Instructions
 Installer Symfony ( cf. le cours )
 Mettre tout le code dans un dossier dans le dossier www/ de WAMP
 Exemple : ``` wamp64/www/TP1 ```
@@ -17,7 +17,7 @@ Aller dans phpmyadmin de wamp et aller dans la base de données "tpweb"
 Aller dans la table User et éditer l'utilisateur créé
 Ajouter "ROLE_ADMIN" à Roles pour en faire un admin
 
-##Versions utilisés
+## Versions utilisés
 PHP 7.4.9
 
 phpmyadmin 5.0.2
