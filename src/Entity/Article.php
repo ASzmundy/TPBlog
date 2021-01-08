@@ -23,12 +23,6 @@ class Article
     private $Titre;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Personne::class, inversedBy="articles")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $Auteur;
-
-    /**
      * @ORM\Column(type="text")
      */
     private $Contenu;
@@ -37,6 +31,12 @@ class Article
      * @ORM\ManyToOne(targetEntity=Categorie::class, inversedBy="Article")
      */
     private $categorie;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="articles")
+     * @ORM\JoinColumn(name="user", referencedColumnName="id", onDelete="SET NULL")
+     */
+    private $Auteur;
 
     public function getId(): ?int
     {
@@ -55,12 +55,12 @@ class Article
         return $this;
     }
 
-    public function getAuteur(): ?Personne
+    public function getAuteur(): ?User
     {
         return $this->Auteur;
     }
 
-    public function setAuteur(?Personne $Auteur): self
+    public function setAuteur(?User $Auteur): self
     {
         $this->Auteur = $Auteur;
 

@@ -22,8 +22,8 @@ use Symfony\Component\Serializer\Exception\NotNormalizableValueException;
  */
 class DateTimeNormalizer implements NormalizerInterface, DenormalizerInterface, CacheableSupportsMethodInterface
 {
-    const FORMAT_KEY = 'datetime_format';
-    const TIMEZONE_KEY = 'datetime_timezone';
+    public const FORMAT_KEY = 'datetime_format';
+    public const TIMEZONE_KEY = 'datetime_timezone';
 
     private $defaultContext;
 
@@ -57,6 +57,8 @@ class DateTimeNormalizer implements NormalizerInterface, DenormalizerInterface, 
      * {@inheritdoc}
      *
      * @throws InvalidArgumentException
+     *
+     * @return string
      */
     public function normalize($object, $format = null, array $context = [])
     {
@@ -87,6 +89,8 @@ class DateTimeNormalizer implements NormalizerInterface, DenormalizerInterface, 
      * {@inheritdoc}
      *
      * @throws NotNormalizableValueException
+     *
+     * @return \DateTimeInterface
      */
     public function denormalize($data, $type, $format = null, array $context = [])
     {

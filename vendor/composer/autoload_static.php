@@ -13,6 +13,7 @@ class ComposerStaticInita630def2951aa31b5e5288ee779ab471
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '92c8763cd6170fce6fcfe7e26b4e8c10' => __DIR__ . '/..' . '/symfony/phpunit-bridge/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '6a47392539ca2329373e0d33e1dba053' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/bootstrap.php',
@@ -27,7 +28,6 @@ class ComposerStaticInita630def2951aa31b5e5288ee779ab471
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
-            'Webimpress\\SafeWriter\\' => 22,
         ),
         'T' => 
         array (
@@ -136,7 +136,6 @@ class ComposerStaticInita630def2951aa31b5e5288ee779ab471
             'Doctrine\\Inflector\\' => 19,
             'Doctrine\\DBAL\\' => 14,
             'Doctrine\\Common\\Lexer\\' => 22,
-            'Doctrine\\Common\\Inflector\\' => 26,
             'Doctrine\\Common\\Collections\\' => 28,
             'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
@@ -162,13 +161,9 @@ class ComposerStaticInita630def2951aa31b5e5288ee779ab471
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
-        'Webimpress\\SafeWriter\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/webimpress/safe-writer/src',
-        ),
         'Twig\\Extra\\TwigExtraBundle\\' => 
         array (
-            0 => __DIR__ . '/..' . '/twig/extra-bundle/src',
+            0 => __DIR__ . '/..' . '/twig/extra-bundle',
         ),
         'Twig\\' => 
         array (
@@ -452,7 +447,7 @@ class ComposerStaticInita630def2951aa31b5e5288ee779ab471
         ),
         'ProxyManager\\' => 
         array (
-            0 => __DIR__ . '/..' . '/ocramius/proxy-manager/src/ProxyManager',
+            0 => __DIR__ . '/..' . '/friendsofphp/proxy-manager-lts/src/ProxyManager',
         ),
         'PhpParser\\' => 
         array (
@@ -513,10 +508,6 @@ class ComposerStaticInita630def2951aa31b5e5288ee779ab471
         'Doctrine\\Common\\Lexer\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
-        ),
-        'Doctrine\\Common\\Inflector\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
         ),
         'Doctrine\\Common\\Collections\\' => 
         array (

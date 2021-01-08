@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Article{% endblock %}
+
+{% block body %}
+    <h1>{{ article.Titre }}</h1>
+    {% if article.Auteur %}
+    <h2>Par <a href="{{ path('user_show', {'id': article.Auteur.id}) }}">{{ article.Auteur.pseudo }}</a></h2>
+	{% else %}
+	<h2>Par <a>[Utilisateur Supprimé]</a></h2>
+	{% endif %}
+    <p>{{ article.Contenu }}</p>
+
+    <div style="text-align:center">
+    <div style="display:inline-block">
+	{% if app.user %}
+	{% if article.Auteur %}
+    {% if app.user.id == article.Auteur.id or "ROLE_ADMIN" in app.user.getRoles() %}
+    	<a class="btn btn-lg btn-warning" href="{{ path('article_edit', {'id': article.id}) }}">Modifier</a>
+   	<div style="display:inline-block">
+    {{ include('article/_delete_form.html.twig') }}
+    </div>
+	{% endif %}
+	{% else %}
+	{% if "ROLE_ADMIN" in app.user.getRoles() %}
+	<a class="btn btn-lg btn-warning" href="{{ path('article_edit', {'id': article.id}) }}">Modifier</a>
+	<div style="display:inline-block">
+    {{ include('article/_delete_form.html.twig') }}
+    </div>
+    {% endif %}
+    {% endif %}
+    {% endif %}
+    </div>
+    </div>
+	</div>
+    <div style="text-align:center" id="retourListeArticle">
+    <a class="btn btn-lg btn-primary" href="{{ path('index') }}" >Retour à la liste des articles</a>
+	</div>
+{% endblock %}

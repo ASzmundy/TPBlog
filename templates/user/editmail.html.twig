@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit User mail{% endblock %}
+
+{% block body %}
+    <h1>Modifier le mail</h1>
+    <div>
+    {{ include('user/_form.html.twig', {'button_label': 'Modifier'}) }}
+	</div>
+    <div>
+    <a href="{{ path('user_show', {'id': user.id}) }}" class=>Annuler et retourner au profil</a>
+	</div>
+{% endblock %}

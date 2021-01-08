@@ -1,0 +1,59 @@
+/*Suppléments css perso*/
+
+
+#mainNav {
+  width: 100%;
+        position: fixed;        
+        background: #DC143C;
+        padding: 10px 0;
+        color: #fff;
+        border-bottom: 12px
+  }
+body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+footer{
+	text-align: center;
+	bottom: 0;
+	padding-top: 60px;
+}
+
+p{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 75px;
+  font-size: larger;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  font-size: xx-large;
+}
+
+a{
+  text-align: center;
+}
+
+div{
+  text-align: center;
+  display: block;
+}
+
+#retourListeArticle{
+  padding-top:3px;
+}
+
+#titreHeader{
+  font-size: x-large;
+}
+
+#nothingToSeeHere{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
